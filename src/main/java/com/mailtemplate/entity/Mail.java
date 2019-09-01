@@ -1,5 +1,7 @@
 package com.mailtemplate.entity;
 
+import java.util.Date;
+
 /**
  * @Auther: nemo
  * @Date: 19-8-30 20:01
@@ -8,8 +10,36 @@ package com.mailtemplate.entity;
 public class Mail {
     private int id;
     private int companyId;
+    private String name;
+    private String mail;
     private String theme;
     private String template;
+    private Date date;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
 
     public int getId() {
         return id;
